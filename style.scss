@@ -1,0 +1,66 @@
+@font-face {
+    font-family: hp;
+    src: url(HARRYP__.TTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: wheat;
+}
+header{
+    height: 19%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: hp;
+    font-size: 60px;
+    background-color: brown;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+main{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    
+    section{
+        height: 100%;
+        flex-grow: 1;
+        background-color: darkred;
+        background-size: cover;
+        background-position: center;
+        transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0 4px 50px black;
+        border-radius: 10px;
+        margin-top: 5px;
+    }
+
+    section:hover{
+        flex-grow: 3;
+    }
+    
+    section:nth-child(1){
+        background-image: url(https://i.pinimg.com/736x/89/b4/6a/89b46a2b0cc2f5378b67b88cacbb55b6.jpg);
+    }
+    section:nth-child(2){
+        background-image: url(https://i.pinimg.com/750x/02/4b/01/024b0149ca6fed4101296e1a07a3a22b.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(https://i.pinimg.com/564x/c1/31/80/c1318036087d535bb9b6ad10b20bab12.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(https://i.pinimg.com/736x/ce/fb/15/cefb1573380dada71b35b117f53f2ccf.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(https://i.pinimg.com/736x/cf/5c/bb/cf5cbb497f1686236e9235df3dc380e5.jpg);
+    }
+        
+}
